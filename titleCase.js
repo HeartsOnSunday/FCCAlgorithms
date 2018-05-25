@@ -1,38 +1,28 @@
 function titleCase(str) {
-  
-  var newStr = str.toLowerCase().split(" ");
-  
-  for (var i = 0; i < newStr.length; i++) {
-    
-    newStr = newStr[i].char(0).toUpperCase();
-
-  }
-  return newStr;
-  
-    
+  //var lowStr = str.toLowerCase();
+  var withCaps = "";
+  withCaps = str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+    //console.log(withCaps);
+   for (var i = 1; i < str.length; i++){
+      if (str[i] == " "){
+          withCaps[i] = str[i + 1].toUpperCase();
+          
+               // console.log("Space at " + i);
+                // withCaps += withCaps.concat(str[i]);
+                // withCaps += withCaps.concat(str[i + 1]);
+                // i += 1;
+                // console.log(withCaps);
+                // //withCaps += withCaps.charAt(i + 1).toUpperCase();
+                // //i += 1;
+ //            chars = withCaps.charAt(i).toUpperCase().concat(lowStr[i]);
+//           console.log("hello");
+       }
+       //console.log(withCaps);
+        
+//   }
+   }
+    console.log(withCaps);
 }
 
-    function operatr (newStr) {
-      
-      var up = newStr[i].charAt(0).toUpperCase();
-   // console.log(up);
-      return newStr;
-    }
 
 titleCase("I'm a little tea pot");
-
-/*
-
-function titleCase(str) {
-  var newStr = str.split(" ");
-  console.log(newStr);
-  var lowercase = newStr.toLowerCase();
-  console.log(lowercase);
-  var uppercased = lowercase.charAt(0).toUpperCase();
-  console.log(uppercased);
-  
-  return str;
-}
-
-titleCase("I'm a little tea pot");
-*/
