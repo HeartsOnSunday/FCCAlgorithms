@@ -1,9 +1,9 @@
 
 function destroyer(arr) {
     var a = Array.prototype.slice.call(arguments);
-    console.log(arguments);
+    /*console.log(arguments);
     console.log(a);
-    console.log(arr);
+    console.log(arr); */
     for (var i = 0; i < arr.length; i++) {
         for (var j = 0 ; j < a.length; j++) {
             if (arr[i] === a[j]) {
