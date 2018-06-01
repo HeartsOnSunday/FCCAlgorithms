@@ -23,12 +23,9 @@ return the new array
 
 function diffArray(arr1, arr2) {
     var newArr = arr1.slice().concat(arr2.slice());
-    //console.log(newArr);
     var rtnArray = [];
   for (var i = 0; i < newArr.length; i++) {
-      var first = newArr.indexOf(newArr[i]);
-      var last = newArr.lastIndexOf(newArr[i]);
-        if (first == last) {
+      if (newArr.indexOf(newArr[i]) == newArr.lastIndexOf(newArr[i])) {
           rtnArray.push(newArr[i]);
         }
   }
