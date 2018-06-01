@@ -7,20 +7,17 @@ In other words, return the symmetric difference of the two arrays.
 
 Receive two arrays
 merge the arrays (use an existing array, if possible)
-
 Compare the contents of the arrays by parsing the frequencies (numbers)*
-
 if the number is present in both arrays then the number will appear 2x
 if the number is present in only one array then the number will appear == 1x
 if the number does not appear in either aarray then the number will appear 0x
-
 Array.prototype.indexOf();
-if (2x or more?) .indefOf(); returns index of (allx or firstx then secondx)
+if (2x (or more)) .indefOf(); returns index of (firstx)
 if (1x) .indexOf() returns the first/only index.
 if (0x) .indexOf() returns -1 (does not exist)
-
 lastIndexOf() will return -1 if a number is only listed once (or never)
 lastIndexOf() will return the index if the number occurs 2x.
+return the new array
 
 */
 

@@ -12,9 +12,8 @@ function findElement(arr, func) {
     if (func(arr[i])) {
         num = arr[i];
         console.log(num);
-    } else {
-        console.log(undefined);
-}
+    }
+return undefined;
 }
 
 

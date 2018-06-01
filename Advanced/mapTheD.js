@@ -17,3 +17,11 @@ for (var i = 0; i < arr.length; i++) {
 }
   
 orbitalPeriod([{name : "sputnik", avgAlt : 35873.5553}]);
+
+
+/*
+
+arr.map() accepts an array
+avoid using for loop
+
+*/
