@@ -9,20 +9,19 @@ The methods that take an argument must accept only one argument and it has to be
 These methods must be the only available means of interacting with the object.
 */
 
-var Person = function(firstAndLast, first, last, full) {
+var Person = function(firstAndLast, first, last) {
   // Complete the method below and implement the others similarly
     this.getFullName = function() {
         console.log(firstAndLast);
         return firstAndLast;
   };
     this.getFirstName = function() {
-        
+        console.log(first);
+        return first;
     }; 
     this.getLastName = function() {
-        
-    } 
-    this.getFullName = function() {
-        
+        console.log(last);
+        return last;
     };
     this.setFirstName = function(first) {
         
@@ -37,12 +36,11 @@ var Person = function(firstAndLast, first, last, full) {
   //return firstAndLast;
 };
 
-var bob = new Person('Bob Ross', 'Bob', 'Ross', 'Bob Happy Little Trees Ross');
+var bob = new Person('Bob Ross', 'Bob', 'Ross');
 bob.getFullName();
 bob.getFirstName();
 bob.getLastName();
-bob.getFullName();
-bob.setFirstName(first);
+/*bob.setFirstName(first);
 bob.setLastName(last);
 bob.setFullName(firstAndLast);
 
