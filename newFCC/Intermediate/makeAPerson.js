@@ -70,3 +70,14 @@ bob.setFullName("Haskell Curry");
 bob.getFirstName(); 
 bob.setFullName("Haskell Curry");
 bob.getLastName(); 
+
+
+/*
+Currently Fails:
+
+Object.keys(bob).length should return 6.
+bob.getFullName() should return "Haskell Ross" after bob.setFirstName("Haskell").
+bob.getFullName() should return "Haskell Curry" after bob.setLastName("Curry").
+bob.getLastName() should return "Curry" after bob.setFullName("Haskell Curry").
+
+*/
